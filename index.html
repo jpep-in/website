@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<link rel="icon" type="image/png" href="/images/logo/favicon.png" />
+	<link rel="apple-touch-icon" href="/images/logo/appleicon.png" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.goutez-electronique.com" />
+	<title>Goûtez Electronique Nantes</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+   crossorigin=""/>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+	 crossorigin="anonymous"></script>
+	 <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+	 integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+	 crossorigin=""></script>
+	<script src="script.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbarGe" data-offset="50">
+	<nav id="navbarGe" class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" role="navigation">
+		<a class="navbar-brand" href="#">
+			<img id="navLogoGe" width="40px" src="images/logo/bird.svg" class="d-inline-block align-top" alt="logo">
+			<span id="navTitleGe">Goûtez Electronique !</span></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+		 aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#concept">Concept</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#benevolat" title="Devenir bénévole">Bénévolat</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#programmation" title="Programmation 2018 des goûtez électronique">Programmation</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#coming" title="Venir au Goûtez Electronique !">Venir</a>
+				</li>
+				<li>
+					<a class="nav-link" href="https://www.facebook.com/goutezelectronique" title="Retrouvez le Goûtez Electronique sur facebook"
+					 target="_blank">
+						<i class="fab fa-facebook fa-lg"></i>
+					</a>
+				</li>
+				<li>
+					<a class="nav-link" href="https://twitter.com/goutezelectro" title="Retrouvez le Goûtez Electronique sur Twitter" target="_blank">
+						<i class="fab fa-twitter fa-lg"></i>
+					</a>
+				</li>
+				<li>
+					<a class="nav-link" href="https://instagram.com/goutezelectro" title="Retrouvez le Goûtez Electronique sur Instagram" target="_blank">
+						<i class="fab fa-instagram fa-lg"></i>
+					</a>
+				</li>
+				<li>
+						<a class="nav-link" href="mailto:&#109;&#97;&#105;&#108;&#116;&#111;&#58;%63%6f%6e%74%61%63%74@%67%6f%75%74%65%7a-%65%6c%65%63%74%72%6f%6e%69%71%75%65.%63%6f%6d" title="Nous envoyer un email" target="_blank">
+							<i class="fas fa-envelope"></i>
+						</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</nav>
+	<!-- Section headband artwork -->
+	<section id="headband" data-speed="10" data-type="background">
+		<div class="container">
+		</div>
+	</section>
+	<!-- Section Concept -->
+	<section id="concept" data-speed="10" data-type="background">
+		<div class="container">
+			<div class="jumbotron transparency">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h2>Saison 2018</h2>
+							Fidèle à l'iconique parc des chantiers de l'Île de Nantes, le Goûtez Electronique vous donne rendez-vous pour 4 dates.
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col">
+							<h4>
+								<i class="fas fa-moon"></i> Cale des Sous-Marins</h4>
+							<p>Samedi 2 juin de nocturne 18h-00h, <b>spéciale 10ème édition !</b></p>
+						</div>
+						<div class="col">
+							<h4>
+								<i class="far fa-sun"></i> Jardin des Berges</h4>
+							<p>Les dimanches après-midi 26 août, 9 et 23 septembre de 14h-20h.</p>
+						</div>
+					</div>
+					<br>
+					<hr class="my-4">
+					<div class="row">
+						<div class="col">
+							<h2>Un évènement innovant et respectueux</h2>
+							<br>
+							<ul class="fa-ul">
+								<li>
+									<span class="fa-li">
+										<i class="fab fa-creative-commons-nc-eu fa-lg"></i>
+									</span>Entrée gratuite !</li>
+								<li>
+									<span class="fa-li">
+										<i class="fas fa-hands-helping fa-lg"></i>
+									</span>Entièrement organisé par des bénévoles sur leur temps libre. <a href="#benevolat">Rejoins-nous !</a></li>
+								<li>
+									<span class="fa-li">
+										<i class="fas fa-beer fa-lg"></i>
+									</span>Non subventionné, uniquement financé par les revenus du bar.</li>
+								<li>
+									<span class="fa-li">
+										<i class="fas fa-utensils fa-lg"></i>
+									</span>Une offre de produits locaux et food truck de qualité.</li>
+								<li>
+									<span class="fa-li">
+										<i class="fas fa-volume-down fa-lg"></i>
+									</span>Un système son haute fidélité, calibré pour le plaisir et le respect des oreilles.</li>
+								<li>
+									<span class="fa-li">
+										<i class="fas fa-headphones fa-lg"></i>
+									</span>Des casques de protection autitive en prêt pour venir avec ses enfants.</li>
+								<li>
+									<span class="fa-li">
+										<i class="fas fa-recycle fa-lg"></i>
+									</span>Gardons l'environnement propre ! Toilettes sèches, gobelets consignés et tri-sélectif.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Section Benevoles -->
+	<section id="benevolat" data-speed="20" data-type="background">
+		<div class="container">
+			<div class="card transparency">
+				<div class="card-header text-center">
+					<h1>Participer en tant que bénévole
+						<br>
+						<small class="text-muted">
+							Au Goûtez pas besoin de CV !</small>
+					</h1>
+				</div>
+				<div class="card-body ">
+					<div class="benevoleMotiv">
+							<p class="h4 card-text">Cinq bonnes de raisons d'être bénévole :</p>
+							<ul class="fa-ul">
+								<li>
+									<span class="fa-li fa-stack fa-sm">
+										<i class="fas fa-square fa-stack-2x"></i>
+										<i class="fab fa-stack-1x fa-inverse">1</i>
+									</span>
+									Se former à de nouvelles compétences
+								</li>
+								<li>
+									<span class="fa-li fa-stack fa-sm">
+										<i class="fas fa-square fa-stack-2x"></i>
+										<i class="fab fa-stack-1x fa-inverse">2</i>
+									</span>
+									Contribuer à faire exister un grand évènement public de 5 000 personnes
+								</li>
+								<li>
+									<span class="fa-li fa-stack fa-sm">
+										<i class="fas fa-square fa-stack-2x"></i>
+										<i class="fab fa-stack-1x fa-inverse">3</i>
+									</span>
+									Rigoler et lier des amitiés : 100 bénévoles par date
+								</li>
+								<li>
+									<span class="fa-li fa-stack fa-sm">
+										<i class="fas fa-square fa-stack-2x"></i>
+										<i class="fab fa-stack-1x fa-inverse">4</i>
+									</span>
+									Réaliser une expérience qui sort du quotidien
+								</li>
+								<li>
+									<span class="fa-li fa-stack fa-sm">
+										<i class="fas fa-square fa-stack-2x"></i>
+										<i class="fab fa-stack-1x fa-inverse">5</i>
+									</span>
+									Avoir de la motivation à revendre
+								</li>
+							</ul>
+							<div class="text-center">
+								<a class="btn btn-danger" href="https://docs.google.com/forms/d/e/1FAIpQLSdXUpqUKJGBmPKJQfMiN86A0b4vskeP_5oU_1q6U181Q9w8KQ/viewform"
+								 title="S'inscrire en tant que bénévole" target="_blank" role="button">
+									<i class="fas fa-angle-double-right"></i> Cliquer pour devenir bénévole
+									<i class="fas fa-angle-double-left"></i>
+								</a>
+							</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Section programmation -->
+	<section id="programmation" data-speed="25" data-type="background">
+		<div class="container">
+			<div class="jumbotron transparency">
+				<h2>
+					<i class="fas fa-music"></i>&nbsp;&nbsp;Une ligne artistique exigeante</h2>
+				<p>
+					<br> Chaque date, le Goûtez Électronique offre un panel d'artistes nantais, français, européens et internationaux.
+					<br> La ligne de conduite artistique est avant tout dictée par la qualité, l'originalité, et l'accessibilité.
+					<br>
+					<br> Le Goûtez Électronique ne transige pas depuis sa création et soutien :
+					<ul>
+						<li>l'émergence des talents</li>
+						<li>la pratique amateur</li>
+						<li>la défense de la diversité culturelle</li>
+						<li>une réprésentation équitable homme / femme </li>
+						<li>les artistes en marge de l'industrie du disque</li>
+					</ul>
+				</p>
+				<br>
+				<div class="text-center">
+					<a class="btn btn-outline-info" href="http://facebook.com/goutezelectronique/" title="S'inscrire en tant que bénévole" target="_blank"
+					 role="button">
+						<i class="fas fa-caret-right"></i> Suivez les annonces de la programmation sur facebook
+						<i class="fas fa-caret-left"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Section Venir -->
+	<section id="coming" data-speed="20" data-type="background">
+		<div class="container">
+			<h1>Lieux</h1>
+			<div class="row">
+				<div class="col">
+					<div id="mapid"></div>
+				</div>
+				<div class="col">
+					<h3>
+						<img src="images/map/pinJDB.png" width="24" alt="Marker Jardin des berges"> Le jardin des berges
+						<small><span class="badge badge-pill badge-secondary">Gratuit</span></small>
+					</h3>
+					<p>Pelouse verte vue sur Loire, en face du quai de la fosse, au pied du pont Anne de Bretagne à proximité des machines
+						de l'île.</p>
+					<h3>
+							<img src="images/map/pinCSM.png" width="24" alt="Marker Cale des Sous-Marins"> Le jardin des berges
+							<small><span class="badge badge-pill badge-secondary">Gratuit</span></small>
+						</h3>
+						<p>Pente béton vue sur Loire, en face du quai de la fosse, à proximité du Caroussel des mondes marins.</p>
+					<h3>
+						<img src="images/map/pinF.png" width="24" alt="Marker le Ferrailleur"> Le ferrailleur
+						<small><span class="badge badge-pill badge-secondary">2 &euro;</span></small>
+					</h3>
+					<p>Place forte de Rock à Nantes, ce lieu atypique se met à l'électro les dimanches soir pour les after des Goûtez Electronique
+						à partir de 20h30.</p>
+					<h3>
+						<img src="images/map/pinWH.png" width="24" alt="Marker Warehouse"> Warehouse
+						<small><span class="badge badge-pill badge-secondary">Payant</span></small>
+					</h3>
+					<p>Warehouse accueil l'after Goûtez Electronique du 2 juin de 00h à 6h30.</p>
+				</div>
+			</div>
+			<br>
+			<hr>
+			<br>
+			<h1>Transports</h1>
+			<br>
+			<div class="row">
+				<div class="col">
+					<h4>
+						<i class="fa fa-train"></i> Tramway&nbsp;&nbsp;&nbsp;
+						<i class="fa fa-bus"></i> Bus </h4>
+					<ul>
+						<li>Ligne 1 - Arrêt chantiers Navals
+							<a href="https://www.tan.fr/tramway-ligne-1-3024.kjsp?RH=1417442130672" target="_blank">
+								<i class="fa fa-chevron-circle-right"></i>Plan et horaires TAN
+							</a>
+						</li>
+						<li>Ligne C5 - Arrêt Prairie au Duc
+							<a href="https://www.tan.fr/bus-ligne-c5-4320.kjsp?RH=1417442130672" target="_blank">
+								<i class="fa fa-chevron-circle-right"></i>Plan et horaires TAN
+							</a>
+						</li>
+					</ul>
+					<br>
+					<h4>
+						<i class="fa fa-bicycle"></i> Stations Bicloo</h4>
+					<ul>
+						<li>Machines de l'île (43)</li>
+						<li>Station Mobile - Carousel (103)</li>
+						<li>Palais de justice (44)</li>
+						<li>Prairie au Duc - Maison des syndicat (45)</li>
+						<a href="http://www.bicloo.nantesmetropole.fr/layout/set/fullmap/Toutes-les-stations/Trouver-une-station" target="_blank">
+							<i class="fa fa-chevron-circle-right"></i>Plan des stations
+						</a>
+					</ul>
+				</div>
+				<div class="col">
+					<h4>
+						<i class="fa fa-car"></i> Parkings</h4>
+					<ul>
+						<li>Payant : parking des machines
+							<a href="https://www.resaplace.com/fr/parking/nantes-les-machines-leon-bureau-174" target="_blank">
+								<i class="fa fa-chevron-circle-right"></i>Infos et tarifs
+							</a>
+						</li>
+						<li>Gratuit : voierie / parking du hangar à bananes</li>
+					</ul>
+					<br>
+					<br>
+					<h4>
+						<i class="fa fa-ship"></i> Bateau</h4>
+					<ul>
+						<li>Ponton Belem</li>
+						<li>Ponton des Chantiers</li>
+						<a href="http://www.ports-nantes.fr/fr/localisation" target="_blank">
+							<i class="fa fa-chevron-circle-right"></i>Ports de Nantes Métropole
+						</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<footer class="center">
+			<p>
+				<i>Copyright - Association House 2 Couette, loi 1901 - créée en 2006</i>
+			</p>
+		</footer>
+	</section>
+</body>
+</html>
